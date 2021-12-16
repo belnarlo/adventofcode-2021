@@ -1,7 +1,7 @@
 count = 0
 increases = 0
 
-with open("./real_1.data", "r") as datafile:
+with open("./real.data", "r") as datafile:
     while line := datafile.readline().rstrip():
         if count != 0 and int(line) > lineprev:
             increases += 1
